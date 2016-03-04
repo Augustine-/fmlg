@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  get 'static_pages/attorney_profiles'
+  get 'attorney_profiles', to: 'static_pages#attorney_profiles'
 
-  get 'static_pages/directions'
+  get 'directions', to: 'static_pages#directions'
 
-  get 'static_pages/contact_us'
+  get 'contact_us', to: 'static_pages#contact_us'
+
+  get 'company_resources', to: 'static_pages#company_resources'
 
   root 'static_pages#home'
 
