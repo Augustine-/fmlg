@@ -20,7 +20,26 @@ class StaticPagesController < ApplicationController
 
   def authenticate
     authenticate_or_request_with_http_basic do |username, password|
-      username == "Attorney" && password == "fmlg"
+      usernames =[
+        'wanda',
+        'carol',
+        'heather',
+        'plc',
+        'sgg',
+        'linda',
+        'mike',
+        'don',
+        'tom',
+        'dianam',
+        'phil',
+        'jeff',
+        'george',
+        'shannon',
+        'jmk',
+        'bpc',
+        'mnm'
+      ]
+      usernames.include?(username.downcase) && password == "FMLG"
     end
   end
 end
