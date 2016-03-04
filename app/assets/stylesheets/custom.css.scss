@@ -1,0 +1,54 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Palatino Linotype';
+  .black-bar {
+    height: 3em;
+    background-color: black;
+    color: #fff;
+    .navbar{
+        min-height: 0px;
+        height: 1em;
+        font-size: 1.5em;
+        text-align: center;
+        ul{
+          width: 100%;
+        }
+        li{
+          bottom: -0.5em;
+          a{
+            padding: 0;
+          }
+        }
+    }
+  }
+  .grey-bar {
+    height: 7em;
+    background-color: #ccc;
+    text-align: center;
+  }
+  .logo{
+    padding-right: 0.5em;
+  }
+  .center{
+    text-align: center;
+  }
+  .navy-blue{
+    padding: 2em;
+    background-color: #006;
+  }
+  .img-center{
+    display: block;
+    margin: auto;
+  }
+  .top-buffer{
+    margin-top: 2em;
+  }
+  .no-top-buffer {
+    margin-top: 0px;
+  }
+}
